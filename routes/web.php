@@ -23,4 +23,16 @@ Route::post('/aspirasi', [AspirasiFileController::class, 'store'])->name('aspira
 Route::get('/aspirasi', [AspirasiFileController::class, 'index']);
 Route::get('/peta', [AspirasiFileController::class, 'map']);
 
+Route::get('/', function () {
+    return view('home');
+})->name('home');
+
+Route::prefix('aspirasi')->group(function () {
+    Route::get('/', [AspirasiFileController::class, 'index'])->name('aspirasi.index');
+    Route::get('/create', function () {
+        return view('aspirasi.create');
+    })->name('aspirasi.create');
+    Route::post('/', [AspirasiFileController::class, 'store'])->name('aspirasi.store');
+});
+
 

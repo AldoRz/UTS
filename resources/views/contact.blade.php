@@ -50,7 +50,7 @@
                         </div>
                         <div class="ml-4">
                             <h3 class="text-lg font-medium text-gray-700">Alamat Kantor</h3>
-                            <p class="mt-1 text-gray-600">Jl. Aspirasi Warga No. 123<br>Kota Bandung, Jawa Barat</p>
+                            <p class="mt-1 text-gray-600">Jl. Aspirasi Warga No. 123<br>Kota Pontianak, Kalimantan Barat</p>
                         </div>
                     </div>
                 </div>
@@ -108,15 +108,51 @@
         </div>
     </div>
 
-    <!-- Map Section -->
-    <div class="mt-16 bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9230750550384!2d107.6088593147726!3d-6.897895295019028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e64a945b890d%3A0x3a5a3f62399900d3!2sBandung%20City%20Hall!5e0!3m2!1sen!2sid!4v1621234567890!5m2!1sen!2sid" 
-                width="100%" 
-                height="450" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy"
-                class="rounded-lg"></iframe>
+   <!-- Map Section -->
+<div class="bg-white py-12 sm:py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10">
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">Lokasi Kami di Pontianak</h2>
+            <p class="mt-3 max-w-2xl mx-auto text-gray-500 sm:mt-4">
+                Kantor Aspirasi Warga Kota Pontianak
+            </p>
+        </div>
+        
+        <!-- Google Maps Embed -->
+        <div class="rounded-xl overflow-hidden shadow-xl border border-gray-200">
+            <div class="aspect-w-16 aspect-h-9 w-full">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.857518481693!2d109.3303903147533!3d-0.02676973548686255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d59c7f6aed6a9%3A0x4a9d60d0d8c6b0e!2sPontianak%2C%20Kota%20Pontianak%2C%20Kalimantan%20Barat!5e0!3m2!1sid!2sid!4v1621234567890!5m2!1sid!2sid" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="w-full h-64 sm:h-80 md:h-96 lg:h-[450px]"
+                ></iframe>
+            </div>
+            
+            <div class="bg-gray-50 p-4 sm:p-6">
+                <div class="flex flex-col sm:flex-row justify-between items-center">
+                    <div class="mb-4 sm:mb-0">
+                        <h3 class="text-lg font-medium text-gray-900">Kantor Aspirasi Warga Pontianak</h3>
+                        <p class="mt-1 text-sm text-gray-500">
+                            Jl. Ahmad Yani No.1, Pontianak Selatan<br>
+                            Kota Pontianak, Kalimantan Barat 78121
+                        </p>
+                    </div>
+                    <a 
+                        href="https://maps.google.com/?q=-0.0267697,109.332579" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-md transition-colors duration-300"
+                    >
+                        Buka di Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 @endsection
